@@ -17,6 +17,7 @@ namespace AlphaCoursework.ViewModel
 {
 	class GoodsViewModel : INotifyPropertyChanged
 	{
+	//added empry commit :)
 		private static readonly StreamWriter _Writer = new StreamWriter("Data.log", true);
 		
 		/// <summary>
