@@ -1,0 +1,102 @@
+﻿<Window x:Class="AlphaCoursework.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:user="clr-namespace:AlphaCoursework.ViewModel"
+        Title="Мониторинг цен на товары от различных фирм"
+        Width="500"
+        Height="350"
+        MinWidth="500"
+        MinHeight="350"
+        MaxWidth="500"
+        MaxHeight="350">
+    <Window.DataContext>
+        <user:GoodsViewModel />
+    </Window.DataContext>
+    
+    <Grid Margin="0,0,2,12" ShowGridLines="False">
+        <!--  Устанавливаем две строки  -->
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--  Устанавливаем три столбца  -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="179*" />
+            <ColumnDefinition Width="176*" />
+            <ColumnDefinition Width="124*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--  Размещаем в сетке основные элементы управления  -->
+        <Label Grid.Row="0"
+               Grid.Column="0"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center">
+            Введите название фирмы
+        </Label>
+        <ComboBox Grid.Row="0"
+                  Grid.Column="1"
+                  Margin="0,27"
+                  DisplayMemberPath="Name"
+                  ItemsSource="{Binding Firms}"
+                  SelectedItem="{Binding Path=firm}"
+                  ToolTip="Выберите фирму" />
+
+        <Label Grid.Row="1"
+               Grid.Column="0"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center">
+            Введите наименование товара
+        </Label>
+        <!--  DisplayMemberPath="Name"/  -->
+        <ComboBox Grid.Row="1"
+                  Grid.Column="1"
+                  Margin="0,27"
+                  DisplayMemberPath="Name"
+                  ItemsSource="{Binding Path=Goods}"
+                  SelectedItem="{Binding Path=good}"
+                  ToolTip="Выберите товар" />
+
+        <Label Grid.Row="2"
+               Grid.Column="0"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center">
+            Введите цену на товар
+        </Label>
+
+        <StackPanel Grid.Row="2"
+                    Grid.Column="1"
+                    VerticalAlignment="Center"
+                    Orientation="Horizontal" Height="26" Margin="0,23">
+            <TextBox Width="50"
+                     HorizontalContentAlignment="Left"
+                     VerticalContentAlignment="Center"
+                     Text="{Binding Path=Price.Ruble}" />
+            <Label Width="40" HorizontalContentAlignment="Left">руб.</Label>
+            <TextBox Width="50"
+                     HorizontalContentAlignment="Left"
+                     VerticalContentAlignment="Center"
+                     Text="{Binding Path=Price.Kopek}" />
+            <Label Width="47" HorizontalContentAlignment="Left">коп.</Label>
+        </StackPanel>
+
+        <Button Grid.Row="3"
+                Grid.Column="0"
+                Command="{Binding Path=WriteDataToFileCommand}" Margin="40,25">
+            Сохранить
+        </Button>
+        <Button Grid.Row="3"
+                Grid.Column="2"
+                Command="{Binding Path=CloseWindowCommand}" Margin="38,25">
+            Выход
+        </Button>
+        <!--
+            TextBox Grid.Row="2"
+            Grid.Column="1"
+            Margin="0,27"
+            VerticalContentAlignment="Center"
+            /
+        -->
+    </Grid>
+</Window>

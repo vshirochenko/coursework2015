@@ -1,0 +1,15 @@
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\bin\Debug\AlphaCoursework.exe.config
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\bin\Debug\AlphaCoursework.exe
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\bin\Debug\AlphaCoursework.pdb
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\AlphaCoursework.csprojResolveAssemblyReference.cache
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\App.g.cs
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\AlphaCoursework_MarkupCompile.cache
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\AlphaCoursework.g.resources
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\AlphaCoursework.Properties.Resources.resources
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\AlphaCoursework.csproj.GenerateResource.Cache
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\AlphaCoursework.exe
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\AlphaCoursework.pdb
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\View\GoodsView.baml
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\View\GoodsView.g.cs
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Василий\Desktop\All Projects\ForCursach\AlphaCoursework\obj\Debug\AlphaCoursework_MarkupCompile.lref
